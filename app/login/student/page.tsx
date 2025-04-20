@@ -103,6 +103,9 @@ export default function LoginPage() {
             >
               Create an account
             </Button>
+            <p className="text-sm text-gray-500">
+              Not a student? <Link href="/login/teacher" className="text-primary hover:underline">Teacher login</Link>
+            </p>
           </CardFooter>
         </Card>
       </div>

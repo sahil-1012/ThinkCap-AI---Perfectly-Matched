@@ -1,38 +1,53 @@
-export type Student = {
+// app/types/index.ts
+
+export interface User {
+  id?: string;
+  name: string;
+  email: string;
+  department: string;
+  year: number;
+  rollNumber: string;
+  skills: string[];
+  domainInterests: string[];
+  completedAllocation: boolean;
+  group?: {
+    name: string;
+    members: {
+      name: string;
+      email: string;
+      roll: string;
+    }[];
+  } | null;
+}
+
+export interface Group {
+  id: string;
+  name: string;
+  members: {
+    id: string;
+    name: string;
+    panel: string;
+    roll: number;
+    domains: string[];
+  }[];
+}
+
+export interface Project {
+  id: string;
+  name: string;
+  domain: string;
+  status: string;
+  reviews: {
+    review1: string;
+    review2: string;
+    review3: string;
+  };
+}
+
+export interface Student {
   id: string;
   name: string;
   panel: string;
   roll: number;
   domains: string[];
-};
-
-export type Group = {
-  id: string;
-  name: string;
-  members: Student[];
-};
-
-export type Project = {
-  id: string;
-  name: string;
-  domain: string;
-  status: 'Approved' | 'Rejected' | 'Pending';
-  reviews: {
-    review1: '-' | 'pending' | 'In-progress' | 'Completed' | 'approved';
-    review2: '-' | 'pending' | 'In-progress' | 'Completed' | 'approved';
-    review3: '-' | 'pending' | 'In-progress' | 'Completed' | 'approved';
-  };
-};
-
-export const PANELS = ['Panel A', 'Panel B', 'Panel C', 'Panel D'] as const;
-
-export const DOMAINS = [
-  'Web Development',
-  'Mobile Development',
-  'AI/ML',
-  'Blockchain',
-  'IoT',
-  'Cloud Computing',
-  'Cybersecurity',
-  'Data Science',
-] as const;
+}
