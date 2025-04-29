@@ -16,7 +16,7 @@ export default function TeacherLoginPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    router.push('/teacher/dashboard');
+    router.push('/dashboard/teacher');
   };
 
   return (

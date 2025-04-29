@@ -33,7 +33,7 @@ export default function HomePage() {
             </p>
           </CardContent>
           <CardFooter className="flex justify-center">
-            <Link href="/login" passHref>
+            <Link href="/login/student" passHref>
               <Button className="w-full bg-blue-600 hover:bg-blue-700">
                 Student Login
               </Button>
@@ -55,7 +55,7 @@ export default function HomePage() {
             </p>
           </CardContent>
           <CardFooter className="flex justify-center">
-            <Link href="/teacher/login" passHref>
+            <Link href="/login/teacher" passHref>
               <Button className="w-full bg-green-600 hover:bg-green-700">
                 Teacher Login
               </Button>
@@ -77,7 +77,7 @@ export default function HomePage() {
             </p>
           </CardContent>
           <CardFooter className="flex justify-center">
-            <Link href="/admin/login" passHref>
+            <Link href="/login/admin" passHref>
               <Button className="w-full bg-red-600 hover:bg-red-700">
                 Admin Login
               </Button>
@@ -87,7 +87,7 @@ export default function HomePage() {
       </div>
       
       <div className="mt-16 text-center text-gray-500 text-sm">
-        <p>© 2023 Project Allocation System. All rights reserved.</p>
+        <p>© 2025 Project Allocation System. All rights reserved.</p>
       </div>
     </div>
   );

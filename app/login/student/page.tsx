@@ -16,7 +16,7 @@ export default function LoginPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (password === 'pass1012') {
-      router.push('/dashboard');
+      router.push('/dashboard/student');
     } else {
       alert('Invalid credentials');
     }

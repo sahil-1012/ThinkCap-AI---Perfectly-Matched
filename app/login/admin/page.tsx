@@ -18,7 +18,7 @@ export default function AdminLoginPage() {
     
     // In a real app, this would validate admin credentials against a backend
     // For demo purposes, we'll just redirect to the admin dashboard
-    router.push('/admin/dashboard');
+    router.push('/dashboard/admin');
   };
 
   return (

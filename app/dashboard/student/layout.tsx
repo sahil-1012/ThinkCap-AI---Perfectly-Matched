@@ -1,6 +1,6 @@
 'use client';
 
-import { useRouteGuard } from '../../hooks/useRouteGuard';
+import { useRouteGuard } from '../../../hooks/useRouteGuard';
 
 export default function DashboardLayout({
   children,
